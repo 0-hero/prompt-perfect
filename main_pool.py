@@ -12,6 +12,8 @@ import fastparquet
 openai.api_key = ""
 openai.api_base = "http://localhost:1337"
 
+os.environ["TRANSFORMERS_CACHE"] = "/mnt/volume_sfo3_01"
+
 def prompt(final_prompt, model="gpt-3.5-turbo-16k"):
     MAX_RETRIES = 10
     RETRY_DELAY = 0.5  # seconds
