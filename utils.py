@@ -7,7 +7,7 @@ def download_dataset(repo_name, destination):
     Run git clone command with the url in the given destination
     '''
     try:
-        snapshot_download(repo_id=repo_name, repo_type="dataset", local_dir=destination)
+        snapshot_download(repo_id=repo_name, repo_type="dataset", local_dir=destination, local_dir_use_symlinks=False)
     except Exception as e:
         print(e)
 
