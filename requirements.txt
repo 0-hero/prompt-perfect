@@ -1,0 +1,4 @@
+openai
+fastparquet
+pandas
+huggingface_hub

@@ -1,8 +1,6 @@
-import requests
 import pandas as pd
 import json
 from huggingface_hub import snapshot_download
-from git.repo.base import Repo
 
 def download_dataset(repo_name, destination):
     '''
