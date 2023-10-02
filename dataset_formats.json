@@ -1,0 +1,85 @@
+{
+  "dolphin": {
+    "hf_hub": "ehartford/dolphin",
+    "locations": ["flan1m-alpaca-uncensored-deduped.jsonl"],
+    "structure": {
+      "instruction": "instruction",
+      "input": "input",
+      "output": "output"
+    },
+    "skip": false
+  },
+  "alpaca-gpt4": {
+    "hf_hub": "vicgalle/alpaca-gpt4",
+    "locations": ["data/train-00000-of-00001-6ef3991c06080e14.parquet"],
+    "structure": {
+      "instruction": "instruction",
+      "input": "input",
+      "output": "output",
+      "text": "text"
+    },
+    "skip": false
+  },
+  "airoboros-2.1": {
+    "hf_hub": "jondurbin/airoboros-2.1",
+    "locations": ["instructions.jsonl"],
+    "structure": {
+      "system": "system",
+      "instruction": "instruction",
+      "output": "response"
+    },
+    "skip": false
+  },
+  "dolly-v2_orca": {
+    "hf_hub": "pankajmathur/dolly-v2_orca",
+    "locations": ["dolly_orca.json"],
+    "structure": {
+      "instruction": "instruction",
+      "input": "input",
+      "output": "output",
+      "system": "system"
+    },
+    "skip": true
+  },
+  "orca_mini_v1": {
+    "hf_hub": "pankajmathur/orca_mini_v1_dataset",
+    "locations": ["orca_mini_v1.jsonl"],
+    "structure": {
+      "instruction": "instruction",
+      "output": "output",
+      "system": "system"
+    },
+    "skip": false
+  },
+  "wizard_alpaca_dolly_orca": {
+    "hf_hub": "nRuaif/wizard_alpaca_dolly_orca",
+    "locations": ["test_set.parquet", "train_set.parquet"],
+    "structure": {
+      "instruction": "instruction",
+      "input": "input",
+      "output": "output",
+      "system": "system"
+    },
+    "skip": false
+  },
+  "Alpaca-CoT": {
+    "hf_hub": "QingyiSi/Alpaca-CoT",
+    "locations": ["Alpaca-CoT.jsonl"],
+    "structure": {
+      "instruction": "instruction",
+      "input": "input",
+      "output": "output"
+    },
+    "skip": true
+  },
+  "open-platypus": {
+    "hf_hub": "garage-bAInd/Open-Platypus",
+    "locations": ["data/train-00000-of-00001-5b226e5ae97bf4b1.parquet"],
+    "structure": {
+      "instruction": "instruction",
+      "input": "input",
+      "output": "output"
+    },
+    "skip": false
+  }
+}
