@@ -7,7 +7,7 @@
       "input": "input",
       "output": "output"
     },
-    "skip": false
+    "skip": true
   },
   "alpaca-gpt4": {
     "hf_hub": "vicgalle/alpaca-gpt4",
