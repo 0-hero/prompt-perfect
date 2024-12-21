@@ -1,0 +1,7 @@
+openai
+fastparquet
+pandas
+huggingface_hub
+gpt4all
+tqdm
+pyarrow

@@ -1,0 +1,454 @@
+{
+   "dolphin":{
+      "hf_hub":"cognitivecomputations/dolphin",
+      "locations":[
+         "flan1m-alpaca-uncensored-deduped.jsonl"
+      ],
+      "structure":{
+         "instruction":"instruction",
+         "input":"input",
+         "output":"output"
+      },
+      "skip":true
+   },
+   "alpaca-gpt4":{
+      "hf_hub":"vicgalle/alpaca-gpt4",
+      "locations":[
+         "data/train-00000-of-00001-6ef3991c06080e14.parquet"
+      ],
+      "structure":{
+         "instruction":"instruction",
+         "input":"input",
+         "output":"output",
+         "text":"text"
+      },
+      "skip":true
+   },
+   "airoboros-2.1":{
+      "hf_hub":"jondurbin/airoboros-2.1",
+      "locations":[
+         "instructions.jsonl"
+      ],
+      "structure":{
+         "system":"system",
+         "instruction":"instruction",
+         "output":"response"
+      },
+      "skip":true
+   },
+   "orca_mini_v1":{
+      "hf_hub":"pankajmathur/orca_mini_v1_dataset",
+      "locations":[
+         "orca_mini_v1.jsonl"
+      ],
+      "structure":{
+         "instruction":"instruction",
+         "output":"output",
+         "system":"system"
+      },
+      "skip":true
+   },
+   "wizard_alpaca_dolly_orca":{
+      "hf_hub":"nRuaif/wizard_alpaca_dolly_orca",
+      "locations":[
+         "train_set.parquet",
+         "test_set.parquet"
+      ],
+      "structure":{
+         "instruction":"instruction",
+         "input":"input",
+         "output":"output",
+         "system":"system"
+      },
+      "skip":true
+   },
+   "open-platypus":{
+      "hf_hub":"garage-bAInd/Open-Platypus",
+      "locations":[
+         "data/train-00000-of-00001-4fe2df04669d1669.parquet"
+      ],
+      "structure":{
+         "instruction":"instruction",
+         "input":"input",
+         "output":"output"
+      },
+      "skip":true
+   },
+   "SlimOrca-Dedup":{
+      "hf_hub":"Open-Orca/SlimOrca-Dedup",
+      "locations":[
+         "data/train-00001-of-00002-20da825e60baa022.parquet",
+         "data/train-00000-of-00002-6d275f30fa8e143f.parquet"
+      ],
+      "structure_type":"multiturn-conversation",
+      "structure":{
+         
+      },
+      "skip":true
+   },
+   "Capybara":{
+      "hf_hub":"LDJnr/Capybara",
+      "locations":[
+         "CapybaraPure_Decontaminated.jsonl"
+      ],
+      "prompt_type":"conversation",
+      "structure_type":"multiturn-capybara",
+      "structure":{
+         
+      },
+      "skip":true
+   },
+   "ultrachat":{
+      "hf_hub":"HuggingFaceH4/ultrachat_200k",
+      "locations":[
+         "data/test_gen-00000-of-00001-3d4cd8309148a71f.parquet",
+         "data/test_sft-00000-of-00001-f7dfac4afe5b93f4.parquet",
+         "data/train_gen-00000-of-00003-a6c9fb894be3e50b.parquet",
+         "data/train_gen-00001-of-00003-d6a0402e417f35ca.parquet",
+         "data/train_gen-00002-of-00003-c0db75b92a2f48fd.parquet",
+         "data/train_sft-00000-of-00003-a3ecf92756993583.parquet",
+         "data/train_sft-00001-of-00003-0a1804bcb6ae68c6.parquet",
+         "data/train_sft-00002-of-00003-ee46ed25cfae92c6.parquet"
+      ],
+      "prompt_type":"conversation",
+      "structure_type":"multiturn-ultrachat",
+      "structure":{
+         
+      },
+      "skip":true
+   },
+   "Synthia-v1.3":{
+      "hf_hub":"migtissera/Synthia-v1.3",
+      "locations":[
+         "Synthia-v1.3.jsonl"
+      ],
+      "structure":{
+         "instruction":"instruction",
+         "system":"system",
+         "output":"response"
+      },
+      "skip":true
+   },
+   "glaive-code-assistant":{
+      "hf_hub":"glaiveai/glaive-code-assistant",
+      "locations":[
+         "c9bc9129-eba0-4b10-8292-4ae70fc7fa0d.json"
+      ],
+      "structure":{
+         "instruction":"question",
+         "output":"answer"
+      },
+      "skip":true,
+      "prompt_type":"coding"
+   },
+   "lmsys-1m":{
+      "hf_hub":"lmsys/lmsys-chat-1m",
+      "locations":[
+         "data/train-00003-of-00006-2fa862bfed56af1f.parquet",
+         "data/train-00004-of-00006-18f4bdd50c103e71.parquet",
+         "data/train-00005-of-00006-fe1acc5d10a9f0e2.parquet"
+      ],
+      "prompt_type":"conversation",
+      "structure_type":"multiturn-lmsys",
+      "structure":{},
+      "skip":true,
+      "model_name": "cognitivecomputations/dolphin-2.6-mixtral-8x7b",
+      "provider": "deepinfra"
+   },
+   "pippa":{
+      "hf_hub":"kingbri/PIPPA-shareGPT",
+      "locations":[
+         "pippa_sharegpt_trimmed.jsonl"
+      ],
+      "prompt_type":"conversation",
+      "structure_type":"multiturn-conversation",
+      "structure":{},
+      "skip":true,
+      "model_name": "cognitivecomputations/dolphin-2.6-mixtral-8x7b",
+      "provider": "deepinfra"
+   },
+   "WizardLM_evol_instruct_70k":{
+      "hf_hub":"WizardLM/WizardLM_evol_instruct_70k",
+      "locations":[
+         "alpaca_evol_instruct_70k.json"
+      ],
+      "structure":{
+         "instruction":"instruction",
+         "output":"output"
+      },
+      "skip":true,
+      "model_name": "cognitivecomputations/dolphin-2.6-mixtral-8x7b",
+      "provider": "deepinfra"
+   },
+   "WizardLM_evol_instruct_V2_196k":{
+      "hf_hub":"WizardLM/WizardLM_evol_instruct_V2_196k",
+      "locations":[
+         "WizardLM_evol_instruct_V2_143k.json"
+      ],
+      "structure":{},
+      "structure_type":"multiturn-conversation",
+      "skip":true,
+      "model_name": "cognitivecomputations/dolphin-2.6-mixtral-8x7b",
+      "provider": "deepinfra"
+   },
+   "reddit": {
+      "hf_hub": "euclaise/reddit-instruct",
+      "locations": [
+         "data/test-00000-of-00001.parquet",
+         "data/train-00000-of-00001.parquet"
+      ],
+      "structure": {
+         "instruction": "post_title",
+         "input": "post_text",
+         "output": "comment_text"
+      },
+      "skip":true,
+      "model_name": "cognitivecomputations/dolphin-2.6-mixtral-8x7b",
+      "provider": "deepinfra"
+   },
+   "open-hermes": {
+      "hf_hub": "teknium/OpenHermes-2.5",
+      "locations": [
+         "openhermes2_5.json"
+      ],
+      "structure": {},
+      "skip":true,
+      "model_name": "cognitivecomputations/dolphin-2.6-mixtral-8x7b",
+      "provider": "deepinfra",
+      "structure_type":"multiturn-conversation"
+   },
+   "camel-math": {
+      "hf_hub": "camel-ai/math",
+      "locations": [
+         "math/camel-math.json"
+      ],
+      "structure": {
+         "instruction": "message_1",
+         "output": "message_2"
+      },
+      "skip":true,
+      "model_name": "gpt-3.5-turbo-0125",
+      "provider": "openai",
+      "prompt_type": "math"
+   },
+   "MetaMathQA": {
+      "hf_hub": "meta-math/MetaMathQA",
+      "locations": [
+         "MetaMathQA-395K.json"
+      ],
+      "structure": {
+         "instruction": "query",
+         "output": "response"
+      },
+      "skip":true,
+      "model_name": "gpt-3.5-turbo-0125",
+      "provider": "openai",
+      "prompt_type": "math"
+   },
+   "camel-physics": {
+      "hf_hub": "camel-ai/physics",
+      "locations": [
+         "physics/camel-physics.json"
+      ],
+      "structure": {
+         "instruction": "message_1",
+         "output": "message_2"
+      },
+      "skip":true,
+      "model_name": "gpt-3.5-turbo-0125",
+      "provider": "openai",
+      "prompt_type": "science"
+   },
+   "camel-chemistry": {
+      "hf_hub": "camel-ai/chemistry",
+      "locations": [
+         "chemistry/camel-chemistry.json"
+      ],
+      "structure": {
+         "instruction": "message_1",
+         "output": "message_2"
+      },
+      "skip":true,
+      "model_name": "gpt-3.5-turbo-0125",
+      "provider": "openai",
+      "prompt_type": "science"
+   },
+   "camel-biology": {
+      "hf_hub": "camel-ai/biology",
+      "locations": [
+         "biology/camel-biology.json"
+      ],
+      "structure": {
+         "instruction": "message_1",
+         "output": "message_2"
+      },
+      "skip":true,
+      "model_name": "gpt-3.5-turbo-0125",
+      "provider": "openai",
+      "prompt_type": "science"
+   },
+   "camel-ai-society": {
+      "hf_hub": "camel-ai/ai_society",
+      "locations": [
+         "ai_society_chat/camel-ai-society.json"
+      ],
+      "structure": {},
+      "skip":true,
+      "model_name": "gpt-3.5-turbo-0125",
+      "provider": "openai",
+      "prompt_type": "agents"
+   },
+   "function-calling": {
+      "hf_hub": "Locutusque/function-calling-chatml",
+      "locations": [
+         "data/train-00000-of-00001-f0b56c6983b4a78f.parquet"
+      ],
+      "structure": {},
+      "structure_type":"multiturn-conversation",
+      "skip":true,
+      "model_name": "gpt-3.5-turbo-0125",
+      "provider": "openai",
+      "prompt_type": "function_calling"
+   },
+   "glaive-function-calling-v2": {
+      "hf_hub": "glaiveai/glaive-function-calling-v2",
+      "locations": [
+         "glaive-function-calling-v2.json"
+      ],
+      "structure": {},
+      "skip":true,
+      "model_name": "gpt-3.5-turbo-0125",
+      "provider": "openai",
+      "prompt_type": "function_calling"
+   },
+   "glaive-function-calling": {
+      "hf_hub": "glaiveai/glaive-function-calling",
+      "locations": [
+         "glaive_function_calling.json"
+      ],
+      "structure": {},
+      "skip":true,
+      "model_name": "gpt-3.5-turbo-0125",
+      "provider": "openai",
+      "prompt_type": "function_calling"
+   },
+   "Tested-22k-Python-Alpaca": {
+      "hf_hub": "Vezora/Tested-22k-Python-Alpaca",
+      "locations": [
+         "188k-Vezora-PyCode-Alpaca.json"
+      ],
+      "structure": {
+         "instruction": "instruction",
+         "input": "input",
+         "output": "output"
+      },
+      "skip":true,
+      "model_name": "gpt-3.5-turbo-0125",
+      "provider": "openai",
+      "prompt_type": "coding"
+   },
+   "rosetta-code": {
+      "hf_hub": "cakiki/rosetta-code",
+      "locations": [
+         "data/train-00000-of-00001-8b4da49264116bbf.parquet"
+      ],
+      "structure": {
+         "instruction": "task_description",
+         "output": "code"
+      },
+      "skip":true,
+      "model_name": "gpt-3.5-turbo-0125",
+      "provider": "openai",
+      "prompt_type": "coding"
+   },
+   "Code-Feedback": {
+      "hf_hub": "m-a-p/Code-Feedback",
+      "locations": [
+         "Code-Feedback.jsonl"
+      ],
+      "structure": {},
+      "structure_type": "multiturn-ultrachat",
+      "skip":true,
+      "model_name": "gpt-3.5-turbo-0125",
+      "provider": "openai",
+      "prompt_type": "coding"
+   },
+   "multiround-programming-convo": {
+      "hf_hub": "theblackcat102/multiround-programming-convo",
+      "locations": [
+         "train.jsonl"
+      ],
+      "structure": {},
+      "structure_type": "multiturn-programming",
+      "skip":true,
+      "model_name": "gpt-3.5-turbo-0125",
+      "provider": "openai",
+      "prompt_type": "coding"
+   },
+   "Text-to-sql-v1": {
+      "hf_hub": "Clinton/Text-to-sql-v1",
+      "locations": [
+         "texttosqlv2.jsonl"
+      ],
+      "structure": {},
+      "skip":true,
+      "model_name": "gpt-3.5-turbo-0125",
+      "provider": "openai",
+      "prompt_type": "sql"
+   },
+   "Code-290k-ShareGPT-Vicuna" : {
+      "hf_hub": "cognitivecomputations/Code-290k-ShareGPT-Vicuna",
+      "locations": [
+         "Code-290k-ShareGPT-Vicuna .json"
+      ],
+      "structure": {},
+      "structure_type": "multiturn-conversation",
+      "skip":true,
+      "model_name": "gpt-3.5-turbo-0125",
+      "provider": "openai",
+      "prompt_type": "coding"
+   },
+   "Tested-188k-Python-Alpaca_stringified-jsonifize": {
+      "hf_hub": "jsonifize/Tested-188k-Python-Alpaca_stringified-jsonifize",
+      "locations": [
+         "Tested-188k-Python-Alpaca_stringified.jsonl"
+      ],
+      "structure": {
+         "instruction": "instruction",
+         "input": "input",
+         "output": "output"         
+      },
+      "skip":true,
+      "model_name": "gpt-3.5-turbo-0125",
+      "provider": "openai",
+      "prompt_type": "coding"
+   },
+   "glaive-code-assistant-v2": {
+      "hf_hub": "glaiveai/glaive-code-assistant-v2",
+      "locations": [
+         "glaive_code_assistant_v2.json"
+      ],
+      "structure": {
+         "instruction":"question",
+         "output":"answer"
+      },
+      "skip": false,
+      "model_name": "gpt-3.5-turbo-0125",
+      "provider": "openai",
+      "prompt_type": "coding"
+   },
+   "orca-math-word-problems-200k": {
+      "hf_hub": "microsoft/orca-math-word-problems-200k",
+      "locations": [
+         "data/train-00000-of-00001.parquet"
+      ],
+      "structure": {
+         "instruction": "question",
+         "output": "answer"
+      },
+      "skip": true,
+      "model_name":"gpt-3.5-turbo-0125",
+      "provider": "openai",
+      "prompt_type": "math"
+   }
+}
